@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayatiga - About Agency</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+      * {
+        box-sizing: border-box;
+        --black-color: #141414;
+        --black-hover-color: #333333;
+        --white-color: #ebebeb;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        max-height: 100vh;
+        overflow: hidden;
+        transition: 0.25s ease-in-out;
+        background-color: var(--black-color);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white-color);
+        background-color: var(--black-color);
+        font-weight: 500;
+      }
+
+      a {
+        cursor: pointer;
+      }
+
+      .navbar-link {
+        margin-right: 2rem;
+      }
+
+      .brand {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 0.5rem;
+        margin-left: 3rem;
+        cursor: pointer;
+      }
+
+      .navbar-link ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .navbar-link li {
+        list-style: none;
+        transition: 0.25s ease-in-out;
+      }
+
+      .navbar-link li a {
+        text-decoration: none;
+        color: var(--white-color);
+        padding: 1rem;
+        display: block;
+      }
+
+      .navbar-link li:hover {
+        background-color: var(--black-hover-color);
+      }
+
+      .toggle {
+        position: absolute;
+        top: 1.2rem;
+        right: 3rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+      }
+
+      .toggle .bar {
+        height: 3px;
+        width: 100%;
+        background-color: var(--white-color);
+        border-radius: 10px;
+      }
+
+      .backhome {
+        color: var(--white-color);
+        text-decoration: none;
+      }
+
+      @media (max-width: 550px) {
+        .toggle {
+          display: flex;
+          top: 1rem;
+        }
+
+        .navbar-link {
+          display: none;
+          width: 100%;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar-link ul {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .navbar-link li {
+          text-align: center;
+        }
+
+        .navbar-link li a {
+          padding: 0.5rem 1rem;
+        }
+
+        .navbar-link.active {
+          transition: 0.25s ease-in-out;
+          display: flex;
+          position: absolute;
+          margin-top: 3.2rem;
+          z-index: 1;
+          background-color: var(--black-color);
+        }
+      }
+
+      main {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-image: url(https://images.unsplash.com/photo-1661347335413-e4ef4c97d625?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1138&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 2000px rgb(7 7 7 / 80%);
+        filter: saturate(0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.25s ease-in-out;
+        animation: notSaturated ease-in-out 5s;
+      }
+
+      .content {
+        margin-top: -7rem;
+        color: var(--white-color);
+        width: 100%;
+        padding: 0 25rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+        align-items: center;
+        animation: fadeIn ease-in-out 0.5s;
+      }
+
+      .title {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+
+      .subtitle {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: justify;
+      }
+
+      .action {
+        border: 0.1rem solid var(--white-color);
+        color: var(--white-color);
+        font-size: 1.4rem;
+        width: fit-content;
+        padding: 0.7rem 5rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        transition: 0.25s ease-in-out;
+      }
+
+      .action:hover {
+        border: 0.1rem solid rgba(0, 0, 0, 0);
+        background-color: var(--white-color);
+        color: var(--black-color);
+      }
+
+      .notInSize {
+        display: none;
+        height: 100vh;
+        margin-top: -3rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .notInSize p {
+        color: var(--white-color);
+      }
+
+      @media (max-height: 515px) {
+        main {
+          display: none;
+        }
+
+        .notInSize {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 245px) {
+        nav,
+        main {
+          display: none;
+        }
+
+        .notInSize {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 1555px) {
+        .content {
+          padding: 0 10rem;
+        }
+      }
+
+      @media (max-width: 1065px) {
+        .content {
+          padding: 0 7rem;
+        }
+
+        .title {
+          font-size: 2rem;
+        }
+
+        .subtitle,
+        .action {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .content {
+          padding: 0 2rem;
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes notSaturated {
+        0% {
+          filter: saturate(1);
+        }
+        100% {
+          filter: saturate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="brand"><a href="../" class="backhome">Rayatiga</a></div>
+      <a class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-link">
+        <ul>
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a href="../contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="notInSize">
+      <p>Uh oh! Sorry, the screen :(</p>
+    </div>
+
+    <main>
+      <div class="content">
+        <div class="title">About.</div>
+        <div class="subtitle">
+          We are a corporate agent that offers Domain services, WordPress CMS to
+          website establishment for personal, business, to enterprise-scale
+          needs. We provide web solution services for everyone, especially in
+          Indonesia, we have a website that provides benefits and benefits. And
+          helping millions of people in Indonesia to maximize the potential of
+          the internet by giving them the tools to learn and grow. The best
+          choice of hosting services that are ready to meet your needs for
+          online success. Supported by the best technology, the most complete
+          features and access to customer support. Customer obsession is the
+          main value that Rayatiga Hosting upholds. Our team is constantly
+          exploring and exploring customer needs. Every idea created, every
+          product made, every service presented is the fruit of our learning
+          towards customer needs.
+        </div>
+        <!-- <a href="https://hosting.rayatiga.com/" class="action">Get Package</a> -->
+      </div>
+    </main>
+
+    <script>
+      const toggleButton = document.getElementsByClassName('toggle')[0]
+      const navbarLink = document.getElementsByClassName('navbar-link')[0]
+
+      toggleButton.addEventListener('click', () => {
+        navbarLink.classList.toggle('active')
+      })
+    </script>
+  </body>
+</html>
