@@ -88,11 +88,9 @@
 
     <!-- CSS khusus untuk index.html (Beranda) -->
     <style>
-      .bgIndex {
+      .background-home {
         height: 100vh;
-        background-image: url(./assets/img/home.jpeg);
-        background-position-x: center;
-        box-shadow: inset 0 0 0 2000px rgba(7, 7, 7, 0.7);
+        background-image: url(./assets/img/home.png);
         background-size: cover;
       }
     </style>
@@ -101,8 +99,7 @@
   <body>
     <!-- Navigasi -->
     <nav
-      class="navbar bg-opacity-75 navbar-expand-lg navbar-dark bg-dark animate__animated animate__fadeInDown"
-      style="position: fixed; width: 100%; z-index: 999"
+      class="navbar bg-opacity-75 navbar-expand-lg navbar-dark bg-dark fixed-top animate__animated animate__fadeInDown"
     >
       <div class="container px-5">
         <a class="navbar-brand" href="./">Rayatiga Hosting</a>
@@ -123,7 +120,7 @@
               <a class="nav-link active" aria-current="page">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./tentang.html">Tentang</a>
+              <a class="nav-link" href="./tentang">Tentang</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -141,32 +138,30 @@
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a class="dropdown-item" href="./layanan.html#domainname"
+                  <a class="dropdown-item" href="./layanan#domainname"
                     >Paket Domain Name</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="./layanan.html#managedcmswordpress"
+                  <a class="dropdown-item" href="./layanan#managedcmswordpress"
                     >Paket Managed CMS WordPress</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./layanan.html#completewebsite"
+                  <a class="dropdown-item" href="./layanan#completewebsite"
                     >Paket Complete Website</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item me-2">
-              <a class="nav-link" href="./kontak.html">Kontak</a>
+              <a class="nav-link" href="./kontak">Kontak</a>
             </li>
             <li class="nav-item d-sm-block d-lg-none">
-              <a class="nav-link" href="./layanan.html">Layanan</a>
+              <a class="nav-link" href="./layanan">Layanan</a>
             </li>
             <li class="nav-item">
-              <a href="./layanan.html" class="text-white text-decoration-none"
+              <a href="./layanan" class="text-white text-decoration-none"
                 ><button
                   class="btn btn-secondary px-4 bg-dark bg-gradient border border-0 d-none d-lg-block"
                 >
@@ -180,7 +175,7 @@
     </nav>
 
     <!-- Tampilan Header -->
-    <header class="py-5 d-flex align-items-center bgIndex">
+    <header class="py-5 d-flex align-items-center background-home">
       <div class="container px-5 my-5">
         <div class="row gx-5 justify-content-center">
           <div class="col-lg-8">
@@ -192,7 +187,7 @@
                 <u>Rayatiga Hosting</u>
               </h1>
               <p
-                class="lead text-white-50 mb-5 animate__animated animate__fadeInUp"
+                class="lead text-white-50 mb-3 animate__animated animate__fadeInUp"
               >
                 Buat website tanpa ribet dengan langkah sederhana, mari
                 selangkah lebih maju dengan memperluas untuk bisnis kamu agar
@@ -201,12 +196,8 @@
               <div
                 class="d-grid gap-3 d-sm-flex justify-content-sm-center animate__animated animate__fadeInUp"
               >
-                <a class="btn btn-dark btn-lg px-4 me-sm-3" href="#fitur"
-                  >Memulai</a
-                >
-                <a
-                  class="btn btn-outline-light btn-lg px-4"
-                  href="./layanan.html"
+                <a class="btn btn-dark px-4" href="#fitur">Memulai</a>
+                <a class="btn btn-outline-light px-4" href="./layanan"
                   >Lihat Layanan</a
                 >
               </div>
@@ -233,7 +224,7 @@
               .com secara gratis yang akan dipasangkan pada layanan pilihan
               kamu.
             </p>
-            <a class="text-decoration-none text-white-50" href="./layanan.html">
+            <a class="text-decoration-none text-white-50" href="./layanan">
               Dapatkan layanan
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -250,7 +241,7 @@
               terintegrasi dan siap untuk dioperasikan pada web Anda, dengan
               alasan kecepatan.
             </p>
-            <a class="text-decoration-none text-white-50" href="./layanan.html">
+            <a class="text-decoration-none text-white-50" href="./layanan">
               Dapatkan layanan
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -267,7 +258,7 @@
               berkonsultasi dengan kami dan akan kami eksekusi dengan langkah
               sederhana.
             </p>
-            <a class="text-decoration-none text-white-50" href="./layanan.html">
+            <a class="text-decoration-none text-white-50" href="./layanan">
               Dapatkan layanan
               <i class="bi bi-arrow-right"></i>
             </a>
