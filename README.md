@@ -1,2 +1,2 @@
 # rayatiga
-Rayatiga is an agency based on technology. Rayatiga is an Individual Technology Agency. ✨
+We are a corporate agent that offers Domain services, WordPress CMS to website establishment for personal, business, to enterprise-scale needs. ✨
