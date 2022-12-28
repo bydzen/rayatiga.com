@@ -60,6 +60,8 @@
 
             a {
                 color: greenyellow;
+                cursor: pointer;
+                user-select: none;
             }
 
             @keyframes glitch {
@@ -126,6 +128,6 @@
     </head>
     <body>
         <div title="404">404</div>
-        <p>it means this page doesn't exist. <a href="/">go home /*</a></p>
+        <p>it means this page doesn't exist. <a onclick="history.back()">go back.</a></p>
     </body>
 </html>
