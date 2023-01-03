@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /contact
+Disallow: /checkout
+Disallow: /other
