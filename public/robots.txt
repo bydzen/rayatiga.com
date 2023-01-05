@@ -1,4 +1,5 @@
 User-agent: *
+Disallow /404.html
 Disallow: /founder.html
 
 Sitemap: https://rayatiga.com/sitemap.xml
