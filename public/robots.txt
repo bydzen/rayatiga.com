@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /other
+Disallow: /founder.html
+
+Sitemap: https://rayatiga.com/sitemap.xml
