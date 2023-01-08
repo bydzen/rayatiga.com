@@ -1,35 +1,53 @@
 <!DOCTYPE html>
+<!-- HTML Tag and Language -->
 <html lang="en">
     <head>
+        <!-- NoIndex NoFollow -->
+        <meta name="robots" content="noindex, nofollow" />
+
+        <!-- Title -->
+        <title>404 Not Found - Rayatiga Agency</title>
+
+        <!-- Meta Tag -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="noindex, nofollow" />
-        <title>404 Not Found Rayatiga Agency</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-        <link rel="manifest" href="site.webmanifest" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-            crossorigin="anonymous" />
-        <script
-            defer
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-            crossorigin="anonymous"></script>
+        <meta name="title" content="404 Not Found - Rayatiga Agency" />
+        <meta name="description" content="Sorry, the page you want to visit is not available." />
+        <meta name="author" content="Rayatiga Agency" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rayatiga.com/" />
+        <meta property="og:title" content="Rayatiga Agency" />
+        <meta property="og:description" content="Sorry, the page you want to visit is not available." />
+        <meta property="og:image" content="https://rayatiga.com/asset/img/rayatiga-og.png" />
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://rayatiga.com/" />
+        <meta property="twitter:title" content="Rayatiga Agency" />
+        <meta property="twitter:description" content="Sorry, the page you want to visit is not available." />
+        <meta property="twitter:image" content="https://rayatiga.com/asset/img/rayatiga-og.png" />
+
+        <!-- Link -->
+        <!-- External Style.css -->
+        <link rel="stylesheet" href="https://rayatiga.com/asset/css/main.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="asset/css/bootstrap.css" />
+        <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet" />
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://rayatiga.com/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://rayatiga.com/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://rayatiga.com/favicon-16x16.png" />
+        <link rel="manifest" href="https://rayatiga.com/site.webmanifest" />
     </head>
-    <body
-        style="font-family: 'Poppins', sans-serif"
-        class="bg-dark text-light d-flex flex-column px-2 vh-100 justify-content-center align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary fixed-top">
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
             <div class="container-fluid px-5 py-2">
                 <a class="navbar-brand fw-bolder d-none d-lg-block" href="https://rayatiga.com/index.html"
                     >Rayatiga Agency</a
@@ -67,9 +85,7 @@
                             >
                         </li>
                         <li class="nav-item d-none d-lg-block">
-                            <a
-                                href="https://rayatiga.com/hosting/index.html"
-                                class="btn btn-dark px-3 border-secondary bg-gradient ms-2"
+                            <a href="https://rayatiga.com/hosting/index.html" class="btn btn-dark px-3 ms-2"
                                 >Create Website</a
                             >
                         </li>
@@ -77,11 +93,15 @@
                 </div>
             </div>
         </nav>
-        <h1 class="fw-bold text-center">404 Not Found</h1>
-        <p class="lead text-center">
-            <a href="https://rayatiga.com/index.html" class="link-light fw-bold">Rayatiga</a> Message: The page that you
-            requested does not exist.
-        </p>
-        <a onclick="history.back()" class="btn bg-gradient link-light text-center px-3 border-secondary">Back</a>
+
+        <!-- Main Content -->
+        <main
+            class="container-fluid bg-light text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <h1 class="fw-bolder">404 Not Found</h1>
+                <p class="lead">Sorry, the page you want to visit is not available.</p>
+                <a onclick="history.back()" class="btn btn-dark px-3">Back</a>
+            </div>
+        </main>
     </body>
 </html>
