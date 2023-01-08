@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Judul Website -->
+        <title>Rayatiga Web Services</title>
+
         <!-- Meta -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -9,16 +12,6 @@
             name="description"
             content="Rayatiga Hosting adalah tempat pembuatan website untuk bisnis dan usaha Anda tanpa ribet dengan langkah sederhana." />
         <meta name="author" content="Rayatiga Hosting" />
-
-        <!-- Judul Website -->
-        <title>Rayatiga Web Services</title>
-
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-        <link rel="manifest" href="assets/img/site.webmanifest" />
-
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rayatiga.com/hosting/index.html" />
@@ -27,7 +20,6 @@
             property="og:description"
             content="Rayatiga Hosting adalah tempat pembuatan website untuk bisnis dan usaha Anda tanpa ribet dengan langkah sederhana." />
         <meta property="og:image" content="https://rayatiga.com/hosting/assets/img/rayatiga-hosting-og.png" />
-
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://rayatiga.com/hosting/index.html" />
@@ -37,25 +29,32 @@
             content="Rayatiga Hosting adalah tempat pembuatan website untuk bisnis dan usaha Anda tanpa ribet dengan langkah sederhana." />
         <meta property="twitter:image" content="https://rayatiga.com/hosting/assets/img/rayatiga-hosting-og.png" />
 
+        <!-- Link -->
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+        <link rel="manifest" href="assets/img/site.webmanifest" />
         <!-- Icon Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
-
         <!-- Framework utama Bootstrap -->
         <link href="assets/css/styles.css" rel="stylesheet" />
 
+        <!-- Style -->
         <!-- CSS khusus untuk index.html (Beranda) -->
         <style>
             .background-home {
                 height: 100vh;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/img/home.webp);
+                background-image: linear-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.7)),
+                    url(assets/img/home.webp);
                 background-size: cover;
             }
         </style>
     </head>
 
-    <body class="container-fluid p-0 m-0 d-block">
+    <body class="container-fluid p-0 m-0 d-block bg-light">
         <!-- Navigasi -->
-        <nav class="navbar bg-opacity-75 navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html">Rayatiga Hosting</a>
                 <button
@@ -85,17 +84,17 @@
                                 aria-expanded="false">
                                 Promo
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="services.html#domainname">Paket Domain Name</a>
+                                    <a class="dropdown-item" href="pricing.html#domainname">Paket Domain Name</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="services.html#managedcmswordpress"
+                                    <a class="dropdown-item" href="pricing.html#managedcmswordpress"
                                         >Paket Managed CMS WordPress</a
                                     >
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="services.html#completewebsite"
+                                    <a class="dropdown-item" href="pricing.html#completewebsite"
                                         >Paket Complete Website</a
                                     >
                                 </li>
@@ -105,14 +104,11 @@
                             <a class="nav-link" href="contact.html">Kontak</a>
                         </li>
                         <li class="nav-item d-sm-block d-lg-none">
-                            <a class="nav-link" href="services.html">Layanan</a>
+                            <a class="nav-link" href="pricing.html">Layanan</a>
                         </li>
                         <li class="nav-item">
-                            <a href="services.html" class="text-white text-decoration-none"
-                                ><button
-                                    class="btn btn-secondary px-3 bg-dark bg-gradient border border-0 d-none d-lg-block">
-                                    Layanan
-                                </button></a
+                            <a href="pricing.html" class="text-white text-decoration-none"
+                                ><button class="btn btn-dark px-3 d-none d-lg-block">Layanan</button></a
                             >
                         </li>
                     </ul>
@@ -126,23 +122,17 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center my-5 heroIndex">
-                            <h1 class="display-5 fw-bolder text-white mb-3">
+                            <h1 class="display-5 fw-bolder mb-3">
                                 Online-kan Usahamu dengan
                                 <u>Rayatiga Hosting</u>
                             </h1>
-                            <p class="lead text-white-50 mb-3">
+                            <p class="lead mb-3">
                                 Buat website tanpa ribet dengan langkah sederhana, mari selangkah lebih maju dengan
                                 memperluas untuk bisnis kamu agar dilihat oleh dunia!
                             </p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <!-- <a class="btn btn-dark px-3" href="#fitur">Memulai</a>
-                                <a class="btn btn-outline-light px-3" href="services.html"
-                                    >Lihat Layanan</a
-                                > -->
-                                <a class="btn btn-dark px-3 border-secondary bg-gradient" href="services.html"
-                                    >Beli Website</a
-                                >
-                                <a class="btn btn-outline-light px-3" href="../index.html">Back to Home</a>
+                                <a class="btn btn-dark px-3" href="pricing.html">Beli Website</a>
+                                <a class="btn btn-light border-secondary px-3" href="#fitur">Lihat Layanan</a>
                             </div>
                         </div>
                     </div>
@@ -152,11 +142,11 @@
 
         <!-- Fitur-fitur -->
         <span class="anchor" id="fitur"></span>
-        <section class="py-5 bg-dark text-white">
+        <section class="py-5 bg-light">
             <div class="container px-5 my-5">
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3 px-5">
+                        <div class="feature bg-dark text-white rounded-3 mb-3 px-5">
                             <i class="bi bi-globe"></i>
                         </div>
                         <h2 class="h4 fw-bolder">Domain Gratis</h2>
@@ -164,13 +154,13 @@
                             Dengan membeli Layanan CMS WordPress, kamu telah mendapat domain .com secara gratis yang
                             akan dipasangkan pada layanan pilihan kamu.
                         </p>
-                        <a class="text-decoration-none text-white-50" href="services.html">
+                        <a class="text-decoration-none link-dark" href="pricing.html">
                             Dapatkan layanan
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3 px-5">
+                        <div class="feature bg-dark text-white rounded-3 mb-3 px-5">
                             <i class="bi bi-hdd-rack"></i>
                         </div>
                         <h2 class="h4 fw-bolder">SSD Super Cepat</h2>
@@ -178,13 +168,13 @@
                             Penyimpanan kami menggunakan SSD super cepat yang telah terintegrasi dan siap untuk
                             dioperasikan pada web Anda, dengan alasan kecepatan.
                         </p>
-                        <a class="text-decoration-none text-white-50" href="services.html">
+                        <a class="text-decoration-none link-dark" href="pricing.html">
                             Dapatkan layanan
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3 px-5">
+                        <div class="feature bg-dark text-white rounded-3 mb-3 px-5">
                             <i class="bi bi-diagram-3"></i>
                         </div>
                         <h2 class="h4 fw-bolder">Layanan Tanpa Ribet</h2>
@@ -192,7 +182,7 @@
                             Dengan membeli layanan di Rayatiga Hosting, kamu dapat memulai berkonsultasi dengan kami dan
                             akan kami eksekusi dengan langkah sederhana.
                         </p>
-                        <a class="text-decoration-none text-white-50" href="services.html">
+                        <a class="text-decoration-none link-dark" href="pricing.html">
                             Dapatkan layanan
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -202,7 +192,7 @@
         </section>
 
         <!-- Harga utama layanan CMS WordPress-->
-        <section class="bg-dark py-5 text-white">
+        <section class="bg-light py-5">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Bayar Dengan Harga Terjangkau</h2>
@@ -212,8 +202,8 @@
                 </div>
                 <div class="row gx-5 gy-2 justify-content-center align-items-center">
                     <!-- Layanan WordPress-A -->
-                    <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="1250" data-aos-delay="0">
-                        <div class="card bg-dark mb-5 mb-xl-0 border border-secondary">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card bg-light mb-5 mb-xl-0 border border-secondary">
                             <div class="card-body p-5">
                                 <div class="small text-uppercase fw-bold text-muted">Paket WordPress-A</div>
                                 <div class="mb-3">
@@ -222,27 +212,27 @@
                                 </div>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         <strong>Only 1 WordPress</strong>
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         1 Domain Gratis
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         1 GB Kapasitas SSD
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         1 Database
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         1 Email Profesional
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         Unlimited Bandwith
                                     </li>
                                     <li class="text-muted">
@@ -252,7 +242,7 @@
                                 </ul>
                                 <div class="d-grid">
                                     <a
-                                        class="btn btn-outline-light"
+                                        class="btn btn-outline-dark"
                                         data-bs-toggle="modal"
                                         data-bs-target="#wordpress-aModal"
                                         >Pilih Layanan</a
@@ -269,7 +259,7 @@
                         aria-labelledby="wordpress-aModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content bg-dark">
+                            <div class="modal-content bg-light">
                                 <div class="modal-header">
                                     <h5 class="modal-title fw-bold" id="wordpress-aModalLabel">Checkout Sekrang?</h5>
                                     <button
@@ -289,16 +279,15 @@
                                         href="checkout/wordpress-a/index.html"
                                         target="_blank"
                                         rel="nofollow noopener noreferrer">
-                                        <button type="button" class="btn btn-light">Checkout</button></a
+                                        <button type="button" class="btn btn-dark">Checkout</button></a
                                     >
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Layanan WordPress-B -->
-                    <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="1250" data-aos-delay="300">
-                        <div
-                            class="card mb-5 mb-xl-0 bg-dark bg-opacity-50 border border-3 border-light shadow shadow-lg">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0 bg-light bg-opacity-50 border border-primary shadow shadow-lg">
                             <div class="card-body p-5">
                                 <div class="small text-uppercase fw-bold">
                                     <small>Best Seller </small>
@@ -312,27 +301,27 @@
                                 </div>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         <strong>Up to 5 WordPress</strong>
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         1 Domain Gratis
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         50 GB Kapasitas SSD
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         5 Database
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         5 Email Profesional
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         Unlimited Bandwith
                                     </li>
                                     <li class="text-muted">
@@ -342,7 +331,7 @@
                                 </ul>
                                 <div class="d-grid">
                                     <a
-                                        class="btn btn-outline-light"
+                                        class="btn btn-outline-primary"
                                         data-bs-toggle="modal"
                                         data-bs-target="#wordpress-bModal"
                                         >Pilih Layanan</a
@@ -359,7 +348,7 @@
                         aria-labelledby="wordpress-bModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content bg-dark">
+                            <div class="modal-content bg-light">
                                 <div class="modal-header">
                                     <h5 class="modal-title fw-bold" id="wordpress-bModalLabel">Checkout Sekrang?</h5>
                                     <button
@@ -379,15 +368,15 @@
                                         href="checkout/wordpress-b/index.html"
                                         target="_blank"
                                         rel="nofollow noopener noreferrer">
-                                        <button type="button" class="btn btn-light">Checkout</button></a
+                                        <button type="button" class="btn btn-dark">Checkout</button></a
                                     >
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Layanan WordPress-C -->
-                    <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="1250" data-aos-delay="600">
-                        <div class="card bg-dark border border-secondary">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card bg-light border border-secondary">
                             <div class="card-body p-5">
                                 <div class="small text-uppercase fw-bold text-muted">Paket WordPress-C</div>
                                 <div class="mb-3">
@@ -396,37 +385,37 @@
                                 </div>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         <strong>Up to 10 WordPress</strong>
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         2 Domain Gratis
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         1000 GB Kapasitas SSD
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         10 Database
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         10 Email Profesional
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         Unlimited Bandwith
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-white"></i>
+                                        <i class="bi bi-check"></i>
                                         Unlimited Inode
                                     </li>
                                 </ul>
                                 <div class="d-grid">
                                     <a
-                                        class="btn btn-outline-light"
+                                        class="btn btn-outline-dark"
                                         data-bs-toggle="modal"
                                         data-bs-target="#wordpress-cModal"
                                         >Pilih Layanan</a
@@ -443,7 +432,7 @@
                         aria-labelledby="wordpress-cModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content bg-dark">
+                            <div class="modal-content bg-light">
                                 <div class="modal-header">
                                     <h5 class="modal-title fw-bold" id="wordpress-cModalLabel">Checkout Sekrang?</h5>
                                     <button
@@ -463,7 +452,7 @@
                                         href="checkout/wordpress-c/index.html"
                                         target="_blank"
                                         rel="nofollow noopener noreferrer">
-                                        <button type="button" class="btn btn-light">Checkout</button></a
+                                        <button type="button" class="btn btn-dark">Checkout</button></a
                                     >
                                 </div>
                             </div>
@@ -474,7 +463,7 @@
         </section>
 
         <!-- Testimonal pengguna -->
-        <section class="py-5 bg-dark text-white">
+        <section class="py-5 bg-light">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Testimoni Pengguna</h2>
@@ -483,11 +472,11 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-10">
                         <!-- Testimonal dari Prasetyo Adi -->
-                        <div class="card mb-4 bg-dark border border-secondary">
+                        <div class="card mb-4 bg-light border border-secondary">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <i class="bi bi-chat-right-quote-fill text-secondary fs-1"></i>
+                                        <i class="bi bi-chat-right-quote-fill text-dark fs-1"></i>
                                     </div>
                                     <div class="ms-4">
                                         <p class="mb-1">
@@ -503,11 +492,11 @@
                             </div>
                         </div>
                         <!-- Testimonal dari Tetesanwarna -->
-                        <div class="card mb-4 bg-dark border border-secondary">
+                        <div class="card mb-4 bg-light border border-secondary">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <i class="bi bi-chat-right-quote-fill text-secondary fs-1"></i>
+                                        <i class="bi bi-chat-right-quote-fill text-dark fs-1"></i>
                                     </div>
                                     <div class="ms-4">
                                         <p class="mb-1">
@@ -530,11 +519,11 @@
                             </div>
                         </div>
                         <!-- Testimonal dari Pawonkos799 -->
-                        <div class="card bg-dark border border-secondary">
+                        <div class="card bg-light border border-secondary">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <i class="bi bi-chat-right-quote-fill text-secondary fs-1"></i>
+                                        <i class="bi bi-chat-right-quote-fill text-dark fs-1"></i>
                                     </div>
                                     <div class="ms-4">
                                         <p class="mb-1">
@@ -563,10 +552,10 @@
         </section>
 
         <!-- Pesan Kami -->
-        <section class="bg-dark py-5 text-white">
+        <section class="bg-light py-5">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
-                    <div class="feature bg-dark bg-gradient text-white rounded-3 mb-5 px-5">
+                    <div class="feature bg-dark text-light rounded-3 mb-5 px-5">
                         <i class="bi bi-envelope"></i>
                     </div>
                     <h2 class="fw-bolder">Ada yang ingin ditanyakan?</h2>
@@ -574,7 +563,7 @@
                 </div>
                 <div class="text-center">
                     <a href="chatsupport/index.html" target="_blank" rel="nofollow noopener noreferrer">
-                        <button class="btn btn-outline-light btn-lg px-5">
+                        <button class="btn btn-outline-dark btn-lg px-5">
                             <i class="bi bi-whatsapp pe-3"></i>Kirim Pesan
                         </button>
                     </a>
@@ -583,9 +572,9 @@
         </section>
 
         <!-- Footer -->
-        <footer class="py-5 bg-dark">
+        <footer class="py-5 bg-light">
             <div class="container px-5">
-                <p class="m-0 text-center text-white">Copyright &copy; Rayatiga Hosting 2023</p>
+                <p class="m-0 text-center">Copyright &copy; Rayatiga Hosting 2023</p>
             </div>
         </footer>
 
