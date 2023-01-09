@@ -37,6 +37,9 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="asset/css/bootstrap.css" />
         <script defer type="text/javascript" src="asset/js/bootstrap.js"></script>
+        <!-- AOS -->
+        <link rel="stylesheet" href="asset/css/aos.css" />
+        <script type="text/javascript" src="asset/js/aos.js"></script>
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,13 +102,28 @@
         <main
             class="container-fluid bg-light text-center vh-100 d-flex flex-column justify-content-center align-items-center">
             <div class="container">
-                <h1 class="fw-bolder">Information Technology Agency.</h1>
-                <p class="lead">
+                <h1 class="fw-bolder" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                    Information Technology Agency.
+                </h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     Agency Providing Website Establishment Solutions or as known as WHMCS, reservation of top-level
                     domains, to the provision of a CMS-based website ecosystem.
                 </p>
-                <a href="https://hosting.rayatiga.com/index.html" class="btn btn-dark px-3">Create Website</a>
+                <a
+                    href="https://hosting.rayatiga.com/index.html"
+                    class="btn btn-dark px-3"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    >Create Website</a
+                >
             </div>
         </main>
+
+        <!-- Script -->
+        <!-- AOS -->
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>

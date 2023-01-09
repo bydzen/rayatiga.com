@@ -34,6 +34,9 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="asset/css/bootstrap.css" />
         <script defer type="text/javascript" src="asset/js/bootstrap.js"></script>
+        <!-- AOS -->
+        <link rel="stylesheet" href="asset/css/aos.css" />
+        <script type="text/javascript" src="asset/js/aos.js"></script>
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,10 +99,25 @@
         <main
             class="container-fluid bg-light text-center vh-100 d-flex flex-column justify-content-center align-items-center">
             <div class="container">
-                <h1 class="fw-bolder">404 Not Found</h1>
-                <p class="lead">Sorry, the page you want to visit is not available.</p>
-                <a onclick="history.back()" class="btn btn-dark px-3">Back</a>
+                <h1 class="fw-bolder" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">404 Not Found</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Sorry, the page you want to visit is not available.
+                </p>
+                <a
+                    onclick="history.back()"
+                    class="btn btn-dark px-3"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    >Back</a
+                >
             </div>
         </main>
+
+        <!-- Script -->
+        <!-- AOS -->
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>
