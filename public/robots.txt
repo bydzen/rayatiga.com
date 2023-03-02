@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /arc
-
-Sitemap: https://rayatiga.com/sitemap.xml
