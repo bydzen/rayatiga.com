@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "rayatiga-agency",
+        "public": "rayatiga-super-app",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
         "redirects": [
             {
@@ -11,6 +11,21 @@
             {
                 "source": "/hiring/info",
                 "destination": "/career/info",
+                "type": 301
+            },
+            {
+                "source": "/about.html",
+                "destination": "/about",
+                "type": 301
+            },
+            {
+                "source": "/contact.html",
+                "destination": "/contact",
+                "type": 301
+            },
+            {
+                "source": "/project.html",
+                "destination": "/project",
                 "type": 301
             }
         ]
