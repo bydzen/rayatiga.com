@@ -1,6 +1,18 @@
 {
     "hosting": {
         "public": "rayatiga-agency",
-        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "redirects": [
+            {
+                "source": "/hiring",
+                "destination": "/career",
+                "type": 301
+            },
+            {
+                "source": "/hiring/info",
+                "destination": "/career/info",
+                "type": 301
+            }
+        ]
     }
 }
