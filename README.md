@@ -4,7 +4,7 @@ Serving web at: https://rayatiga.com/index.html
 
 We are a corporate agent that offers Domain services, WordPress CMS to website establishment for personal, business, to enterprise-scale needs. ✨
 
-## Subdirectory
+## Subdirectory (moved permanently 301)
 
 ### Rayatiga Hosting
 
